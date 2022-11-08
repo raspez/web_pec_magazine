@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html" 
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<h:outputStylesheet name="css/styles.css" />
+		<title>Archiv obecnĂ­ho ÄŤasopisu</title>
+	</h:head>
+		<h:body>
+			<div id="page-wrap">
+				<h1>tutaj</h1>
+				
+				<p>Je nutno se pĹ™ihlĂˇsit.</p>
+				
+				<h:form>
+				<h:outputText value="Jméno:"/><h:inputText class="policko" value="#{loginMB.userName}"/><br/>
+				<h:outputText value="Heslo:"/><h:inputSecret class="policko" value="#{loginMB.password}"/><br/>
+				<h:commandButton type="submit" value="PĹ™ihlĂˇsit" action="#{loginMB.doLogin}"/>
+				</h:form>
+			</div>
+		</h:body>
+</html>
+
